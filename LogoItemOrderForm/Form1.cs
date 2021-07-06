@@ -58,7 +58,7 @@ namespace LogoItemOrderForm
                 order.NumItems = Convert.ToInt32(numberOfItemsTextBox.Text);
 
                 //set ItemID
-                order.ItemID = 1;  //was this supposed to be used somewhere?  
+                order.ItemID = 1;  //was this supposed to be used somewhere?  set and forget
 
                 //set OrderID
                 order.OrderID = Convert.ToInt32(orderNumberTextBox.Text);
