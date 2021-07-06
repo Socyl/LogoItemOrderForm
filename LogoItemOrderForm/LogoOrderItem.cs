@@ -139,10 +139,7 @@ namespace LogoItemOrderForm
             {
                 TotalPrice += 1.0M * NumItems;
             }
-            //else
-            //{
-            //    return;  //handles Calc() prior to all values set
-            //}
+        
 
             //charge if text to be engraved
             if (!(string.Equals(Text, "")))
