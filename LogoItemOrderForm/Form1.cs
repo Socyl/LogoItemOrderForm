@@ -24,9 +24,8 @@ namespace LogoItemOrderForm
                 LogoOrderItem order = new LogoOrderItem(logoCheckBox.Checked, textToEngraveTextBox.Text);
 
                 //check and set itemType
-                //NOTE TO GLENN:  left in the original code in these if statements, as i like them better, but they led
-                //to strange behavior in the summary results string.  This way works better all around
-
+                //NOTE TO GLENN:  left in/commented out the original code in these if statements, as i like them better, but they led
+                //to some awkwardness in the results string construction. ("you ordered 33 Mug")  This way works better for me in THIS case.
 
                 if (usbRadioButton.Checked)
                 {
