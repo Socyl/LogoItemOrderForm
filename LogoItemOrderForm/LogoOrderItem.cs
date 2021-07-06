@@ -121,7 +121,7 @@ namespace LogoItemOrderForm
         {
             TotalPrice = 0;
             //basic item prices
-            if (NumItems == 0)  //dont calc until number of items is set.
+            if (NumItems == 0)  //dont bother to calc until number of items is set.
             {
                 return;
             }
