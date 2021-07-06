@@ -51,8 +51,6 @@ namespace LogoItemOrderForm
 
         public decimal TotalPrice { get; private set; }
 
-
-
         public bool HasLogo
         {
             get
@@ -146,16 +144,16 @@ namespace LogoItemOrderForm
                 return;  //handles Calc() prior to all values set
             }
 
-            //if text to be engraved
+            //charge if text to be engraved
             if (!(string.Equals(Text, "")))
             {
-                TotalPrice += (.05M * NumItems);
+                TotalPrice += .05M * NumItems;
             }
-            //if  logo involved
+            //charge if  logo involved
             if (HasLogo)
             {
-                TotalPrice += (.1M * NumItems);
-                TotalPrice += (.03M * NumItems * NumColors);
+                TotalPrice += .1M * NumItems;
+                TotalPrice += .03M * NumItems * NumColors;
             }
         }
 
